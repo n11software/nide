@@ -3,7 +3,7 @@ CC = gcc
 CFLAGS = -std=c89 -Wall -g -O2 `pkg-config --cflags gtk+-3.0`
 LDFLAGS = `pkg-config --libs gtk+-3.0`
 TARGET = nide
-SRC = nide.c
+SRC = nide.c ui.c callbacks.c
 
 # Default target
 all: $(TARGET)
